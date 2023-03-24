@@ -1,0 +1,78 @@
+.propertyListingContainer {
+  width: 100%;
+  overflow-y: hidden;
+}
+
+.propertyListingBody {
+  height: 100%;
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.propertyListingWrapper {
+  width: 90%;
+  height: 90%;
+  margin: auto auto;
+}
+
+.propertyListingTop {
+  width: 100%;
+  display: inline-flex;
+  justify-content: end;
+  height: 10%;
+}
+
+.propertyCategory {
+  margin-right: 2rem;
+  font-size: 16px;
+  font-family: 'Noto Sans Lao Looped', sans-serif;
+  color: #D2D2D2;
+  height: 100%;
+  width: 25%;
+  height: 50%;
+  padding-left: 1rem;
+  border: 1px solid #D9D8D8;
+  border-radius: 0.5rem;
+  outline: none;
+  background-position: right .7em top 50%, 0 0;
+  -webkit-appearance: none;
+  appearance: none;
+  background: url(../../images/dropdownArrow.png);
+  background-repeat: no-repeat, repeat;
+  background-position: right .7em top 50%, 0 0;
+  background-size: 0.8em auto, 100%;
+}
+
+.propertyListingBottom {
+  height: 95%;
+  overflow-y: scroll;
+  direction: rtl;
+}
+
+@media only screen and (min-width: 320px) 
+and (max-width: 1200px)  { 
+  .propertyListingContainer {
+    height: 45vh;
+    overflow-y: hidden;
+  }
+
+  .propertyListingBody {
+    margin-top: 1rem;
+  }
+
+  .propertyListingTop {
+    justify-content: center;
+  }
+
+  .propertyCategory {
+    height: 0px;
+    margin: 0;
+  }
+
+  .propertyListingBottom {
+    height: 100%;
+  }
+}
+
+

@@ -1,0 +1,49 @@
+.markerContainer {
+  width: 100%;
+  height: 100%;
+  display: inline-flex;
+}
+
+.markerContainer img {
+  width: 45%;
+  height: 45%;
+  margin: 1rem;
+}
+
+.markerContainer h1 {
+  font-size: 20px;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.markerContainer h3 {
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  color: #CCCCCC;
+  margin-top: 0;
+}
+
+.gm-ui-hover-effect  {
+  padding-right: 2.1rem !important;
+  padding-top: 0.2rem !important;
+}
+
+@media only screen and (min-width: 1200px) 
+and (max-width: 1600px) {
+  .mapsContainer {
+    margin-top: 0.2rem;
+  }
+}
+
+@media only screen and (min-width: 320px) 
+and (max-width: 1200px)  { 
+  .mapsContainer {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+}

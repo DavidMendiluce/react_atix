@@ -1,0 +1,256 @@
+.contactContainer {
+  position: fixed;
+  width: 30%;
+  height: 87.4%;
+  background-color: #EAE2DC;
+  display: flex;
+}
+
+.contactWrapper {
+  width: 90%;
+  height: 90%;
+  margin: auto auto;
+}
+
+.priceContact h3 {
+  font-size: 40px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  margin: 1rem;
+  color: #575757;
+}
+
+.roomCharacteristicsContact {
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.roomCharacteristicsContact ul {
+  padding: 0;
+  display: inline-flex;
+  justify-content: space-around;
+  width: 95%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #575757;
+  margin: 0.5rem;
+  border-bottom: 1px solid black;
+  padding-bottom: 1rem;
+}
+
+.roomCharacteristicsContact ul li {
+  list-style-type: none;
+}
+
+.middleContact {
+  margin-top: 2rem;
+}
+
+.middleContactTitle p {
+  font-size: 40px;
+  text-align: center;
+  margin: 1rem;
+}
+
+.contactForm {
+  margin: 2rem;
+}
+
+.contactForm input, .contactForm textarea {
+  font-size: 16px;
+  font-family: 'Noto Sans Lao Looped', sans-serif;
+  padding-left: 1rem;
+}
+
+.contactForm textarea {
+  padding-top: 1rem;
+}
+
+.contactForm input::placeholder, .contactForm textarea::placeholder {
+  color: #D2D2D2;
+}
+
+.topContactForm {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 105%;
+  height: 3rem;
+  margin-bottom: 2rem;
+}
+
+.topContactForm input {
+  width: 35%;
+  height: 100%;
+  border-radius: 4px;
+  border: 1px solid #D9D8D8;
+  outline: none;
+}
+
+.topContactForm input:nth-child(1) {
+  width: 35%;
+}
+
+.topContactForm input:nth-child(2) {
+  width: 60%;
+  margin-left: 1rem;
+}
+
+.middleContactForm {
+  width: 100%;
+  height: 3rem;
+  margin-bottom: 2rem;
+}
+
+.middleContactForm input {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  border: 1px solid #D9D8D8;
+  outline: none;
+}
+
+.bottomContactForm {
+  width: 100%;
+}
+
+.bottomContactForm textarea {
+  width: 100%;
+  height: 12rem;
+  border-radius: 4px;
+  border: 1px solid #D9D8D8;
+  outline: none;
+}
+
+.bottomContact {
+  margin-top: 3rem;
+}
+
+.contactBtnContainer {
+  background-color: #FF9846;
+  width: 99%;
+  height: 4rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.contactBtnContainer:hover {
+  cursor: pointer;
+  background-color: #FF8320;
+}
+
+.contactBtnContainer span {
+  text-align: center;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+@media screen 
+and (min-width: 1200px) 
+and (max-width: 1600px)  { 
+
+  .propertyDetailsPageBody {
+    margin-top: 6.65%;
+  }
+
+  .contactContainer {
+    height: 88.5%;
+  }
+
+  .contactWrapper {
+    height: 95%;
+    width: 95%;
+  }
+
+  .topContact h3 {
+    font-size: 25px;
+    margin: 0.5rem;
+  }
+
+  .middleContact {
+    margin-top: 0;
+  }
+
+  .roomCharacteristicsContact ul {
+    font-size: 18px;
+    margin: 0.5rem;
+  }
+
+  .middleContactTitle p {
+    font-size: 20px;
+    margin: 0.5rem;
+  }
+
+  .bottomContactForm textarea {
+    height: 6rem;
+  }
+
+  .bottomContact {
+    margin-top: 0;
+  }
+
+  .contactForm {
+    margin: 1rem;
+  }
+
+  .topContactForm {
+    width: 100%;
+  }
+  
+  .middleContactForm input {
+    width: 95%;
+  }
+
+  .bottomContactForm {
+    width: 95%;
+  }
+}
+
+@media only screen and (min-width: 320px) 
+and (max-width: 1200px)  {
+  .contactContainer {
+    height: 120%;
+    position: initial;
+    width: 100%;
+    margin-top: 4rem;
+  }
+
+  .contactContainer li {
+    font-size: 20px;
+  }
+
+  .contactWrapper {
+    height: 100%;
+  }
+
+  .topContact {
+    margin-top: 2rem;
+  }
+
+  .middleContactTitle p {
+    font-size: 30px;
+  }
+
+  .topContactForm {
+    width: 100%;
+  }
+  
+  .middleContactForm input {
+    width: 95%;
+  }
+
+  .bottomContactForm {
+    width: 95%;
+  }
+
+  .bottomContact {
+    margin: 1rem;
+  }
+}
+

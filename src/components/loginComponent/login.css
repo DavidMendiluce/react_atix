@@ -1,0 +1,144 @@
+.loginContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.loginWrapper {
+  margin: auto auto;
+  height: 60%;
+  width: 20%;
+}
+
+.loginTop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logoContainer {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.loginContainer img {
+  width: 60%;
+  cursor: pointer;
+}
+
+.loginWrapper h4 {
+  font-size: 26px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+.loginInputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.loginInputs input {
+  position: relative;
+  height: 3.5rem;
+  width: 100%;
+  left: 1rem;
+  font-size: 16px;
+  font-family: 'Noto Sans Lao Looped', sans-serif;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.loginInputs input::placeholder {
+  color: #D2D2D2;
+}
+
+.loginNameInput, .loginPassInput {
+  height: 75%;
+  width: 100%;
+  margin: auto auto;
+  border: 1px solid #D9D8D8;
+  border-radius: 0.5rem;
+}
+
+.loginNameInput:hover, .loginPassInput:hover {
+  background-color: rgba(239, 239, 239,0.2);
+}
+
+.loginNameInput {
+  margin-bottom: 1.5rem;
+}
+
+.forgotPassword {
+  margin-top: 0.5rem;
+}
+
+.forgotPassword p {
+  color: #FF9846;
+  cursor: pointer;
+}
+
+.forgotPassword p:hover {
+  text-decoration: underline;
+}
+
+.loginComponentBtn {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.loginComponentBtn div {
+  background-color: #FF9846;
+  width: 99%;
+  height: 75%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.loginComponentBtn div span {
+  text-align: center;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.loginComponentBtn a {
+  text-decoration: none;
+  text-align: center;
+  border-bottom: none;
+}
+
+.loginComponentBtn a:hover {
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.loginComponentBtn div:hover {
+  cursor: pointer;
+  background-color: #FF8320;
+}
+
+@media screen 
+and (min-width: 1200px) 
+and (max-width: 1600px)  { 
+  .loginWrapper {
+    width: 30%;
+    height: 80%;
+  }
+}
+
+@media only screen and (min-width: 320px) 
+and (max-width: 1200px)  {
+  .loginWrapper {
+    width: 80%;
+  }
+}
