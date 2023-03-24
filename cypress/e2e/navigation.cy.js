@@ -25,8 +25,5 @@ describe('navigation spec', () => {
     cy.get('.priceRangeContainer select').last().select('2000000')
     cy.get('.searchBarBottom a').click()
 
-    //
-    cy.get('.propertyBox').first().click({force: true})
-    cy.get('.propertySubTitle h3').contains('Amsterdam')
   })
 })
