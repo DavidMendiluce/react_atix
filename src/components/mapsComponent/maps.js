@@ -5,6 +5,9 @@ import houseIcon from '../../images/orangeHouseMini.png';
 import './maps.css';
 import { Link } from 'react-router-dom';
 
+const stringPath = window.location.href;
+const arrayPath = stringPath.split('/');
+const optionType = arrayPath[4];
 /*-----------------MAP options start--------------------*/
 const containerStyle = {
   width: '100%',
@@ -84,7 +87,7 @@ function Maps({properties}) {
       >
         {activeMarker === id ? (
           <InfoWindow options = {{maxWidth: 300}} onCloseClick={() => setActiveMarker(null)}>
-            <Link to={`/property/${propertyId}`}>
+            <Link to={`/property/${optionType}/${propertyId}`}>
               <div className='markerContainer'>
                 <img src={image}/>
                 <div className='markerText'>
