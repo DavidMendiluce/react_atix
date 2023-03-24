@@ -1,0 +1,15 @@
+name: Cypress Tests
+on: [push]
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Checkout
+        uses: actions/checkout@v3.3.0
+      - name: Cypress.io
+        uses: cypress-io/github-action@v5.1.0
+        env: 
+          REACT_APP_MAPS_API_KEY: ${{ secrets.REACT_MAPS_API }}
+          REACT_APP_API_PATH: ${{ secrets.REACT_API_PATH }}
+        with:
+          start: npm start
